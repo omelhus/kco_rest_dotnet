@@ -173,5 +173,36 @@ namespace Klarna.Rest.Models
         /// </summary>
         [JsonProperty("external_checkouts")]
         public IList<ExternalCheckout> ExternalCheckouts { get; set; }
+
+        [JsonProperty("shipping_options")]
+        public IList<ShippingOption> ShippingOptions { get; set; }
+
+        [JsonProperty("selected_shipping_option")]
+        public ShippingOption SelectedShippingOption { get; set; }
+    }
+
+    public class ShippingOption
+    {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        
+        [JsonProperty("description")]
+        public string Description { get; set; }
+        
+        [JsonProperty("price")]
+        public int Price { get; set; }
+        
+        [JsonProperty("tax_amount")]
+        public int TaxAmount { get; set; }
+        [JsonProperty("tax_rate")]
+        public int TaxRate { get; set; }
+        [JsonProperty("preselected")]
+        public bool Preselected { get; set; }
+        [JsonProperty("shipping_method")]
+        public string ShippingMethod { get; set; }
     }
 }
+
