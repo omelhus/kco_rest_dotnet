@@ -109,6 +109,7 @@
     <Compile Include="Models\Requests\UpdateAuthorization.cs" />
     <Compile Include="Models\Requests\UpdateCustomerDetails.cs" />
     <Compile Include="Models\Requests\UpdateMerchantReferences.cs" />
+    <Compile Include="Models\ShippingOption.cs" />
     <Compile Include="OrderManagement\Capture.cs" />
     <Compile Include="OrderManagement\ICapture.cs" />
     <Compile Include="OrderManagement\IOrder.cs" />
@@ -133,7 +134,7 @@
     <None Include="Settings.StyleCop" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" />
+  <!--Import Project="$(SolutionDir)\.nuget\NuGet.targets" /-->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

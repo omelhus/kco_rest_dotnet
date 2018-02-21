@@ -18,6 +18,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 #endregion
+
 namespace Klarna.Rest.Models
 {
     using Newtonsoft.Json;
@@ -86,5 +87,11 @@ namespace Klarna.Rest.Models
         /// </summary>
         [JsonProperty("total_tax_amount")]
         public long? TotalTaxAmount { get; set; }
+
+        /// <summary>
+        /// Gets or sets the image url
+        /// </summary>
+        [JsonProperty("image_url")]
+        public string ImageUrl { get; set; }
     }
 }

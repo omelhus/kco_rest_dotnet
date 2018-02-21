@@ -18,6 +18,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 #endregion
+
 namespace Klarna.Rest.Models
 {
     using System;

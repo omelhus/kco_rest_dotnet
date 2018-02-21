@@ -18,6 +18,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 #endregion
+
 namespace Klarna.Rest.Models
 {
     using System;
@@ -75,5 +76,11 @@ namespace Klarna.Rest.Models
         /// </summary>
         [JsonProperty("notification")]
         public Uri Notification { get; set; }
+
+        /// <summary>
+        /// Gets or sets the shipping address update url.
+        /// </summary>
+        [JsonProperty("shipping_address_update")]
+        public Uri ShippingAddressUpdate { get; set; }
     }
 }
