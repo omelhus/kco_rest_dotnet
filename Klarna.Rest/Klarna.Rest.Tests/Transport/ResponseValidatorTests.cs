@@ -150,11 +150,17 @@ namespace Klarna.Rest.Tests.Transport
         /// Exception test of ContentType.
         /// </summary>
         [Test]
-        [ExpectedException(typeof(Exception), ExpectedMessage = "Response has no Content-Type header.")]
         public void ResponseValidator_ContentType_ExceptionMissing()
         {
-            this.headers.Clear();
-            this.responseValidator.ContentType("different/contentType");
+            Assert.Throws<Exception>(
+                () =>
+                {
+                    {
+                        this.headers.Clear();
+                        this.responseValidator.ContentType("different/contentType");
+                    }
+                }, 
+                "Response has no Content-Type header.");
         }
 
         #endregion
