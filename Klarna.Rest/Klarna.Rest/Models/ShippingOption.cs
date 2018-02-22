@@ -1,7 +1,7 @@
 ﻿#region Copyright Header
 //-----------------------------------------------------------------------
-// <copyright file="ShippingOption.cs" company="ON IT AS">
-//     Copyright 2018 ON IT AS
+// <copyright file="ShippingOption.cs" company="Klarna AB">
+//     Copyright 2018 Klarna AB
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
