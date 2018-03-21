@@ -89,9 +89,26 @@ namespace Klarna.Rest.Models
         public long? TotalTaxAmount { get; set; }
 
         /// <summary>
-        /// Gets or sets the image url
+        /// Gets or sets the image url.
         /// </summary>
         [JsonProperty("image_url")]
         public string ImageUrl { get; set; }
+
+        /// <summary>
+        /// Gets or sets the product url.
+        /// </summary>
+        [JsonProperty("product_url")]
+        public string ProductUrl { get; set; }
+
+        /// <summary>
+        /// Gets or sets the merchant data for the order line.
+        /// </summary>
+        [JsonProperty("merchant_data")]
+        public string MerchantData { get; set; }
+
+        /// <summary>
+        /// Gets or sets the product identifiers (category, global trade item number, manufacturer part number, brand).
+        /// </summary>
+        public ProductIdentifiers ProductIdentifiers { get; set; }
     }
 }

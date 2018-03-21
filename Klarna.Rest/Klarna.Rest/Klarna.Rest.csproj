@@ -95,6 +95,7 @@
     <Compile Include="Models\ExternalPaymentMethod.cs" />
     <Compile Include="Models\Gui.cs" />
     <Compile Include="Models\GuiOptions.cs" />
+    <Compile Include="Models\ProductIdentifiers.cs" />
     <Compile Include="Models\Requests\AddShippingInfo.cs" />
     <Compile Include="Models\CaptureData.cs" />
     <Compile Include="Models\CheckoutOptions.cs" />

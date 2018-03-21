@@ -187,5 +187,11 @@ namespace Klarna.Rest.Models
         /// </summary>
         [JsonProperty("selected_shipping_option")]
         public ShippingOption SelectedShippingOption { get; set; }
+
+        /// <summary>
+        /// Gets or sets the merchant data.
+        /// </summary>
+        [JsonProperty("merchant_data")]
+        public string MerchantData { get; set; }
     }
 }
