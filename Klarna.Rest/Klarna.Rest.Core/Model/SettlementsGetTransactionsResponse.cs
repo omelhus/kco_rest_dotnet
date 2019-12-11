@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Klarna.Rest.Core.Model
+namespace Klarna.Rest.Core.Model.Settlements
 {
     /// <summary>
     /// Get transaction response object
